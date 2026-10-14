@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "description": "Sandbox CLI for DIST-VERIFY",
+  "homepage": "https://github.com/zamn/acme-cli-dist-test",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/zamn/acme-cli-dist-test/releases/download/v0.1.0/acme-dist-x86_64-pc-windows-msvc.zip",
+      "hash": "829aae9a4400085dacd075107b00aeaa0a17c0d01773ac1039b2e9485eb736d9",
+      "bin": "acme-dist.exe"
+    }
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/zamn/acme-cli-dist-test/releases/download/v$version/acme-dist-x86_64-pc-windows-msvc.zip"
+      }
+    }
+  },
+  "checkver": {
+    "github": "https://github.com/zamn/acme-cli-dist-test"
+  }
+}
